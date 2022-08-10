@@ -202,6 +202,35 @@ endef
 
 $(eval $(call KernelPackage,net-xr819s))
 
+define KernelPackage/net-rtl8723ds
+  SUBMENU:=$(WIRELESS_MENU)
+  TITLE:=RTL8723DS support (staging)
+  DEPENDS:= +r8723ds-firmware +@IPV6 +@USES_REALTEK +@PACKAGE_realtek-rftest +@PACKAGE_rtk_hciattach
+  FILES:=$(LINUX_DIR)/drivers/net/wireless/rtl8723ds/8723ds.ko
+  KCONFIG:=\
+        CONFIG_RTL8723DS=m \
+        CONFIG_BT=y \
+        CONFIG_BT_BREDR=y \
+        CONFIG_BT_RFCOMM=y \
+        CONFIG_BT_RFCOMM_TTY=y \
+        CONFIG_BT_DEBUGFS=y \
+        CONFIG_BT_HCIUART_RTL3WIRE=y \
+        CONFIG_BT_HCIUART=y \
+        CONFIG_BT_HCIUART_H4=y \
+        CONFIG_HFP_OVER_PCM=y \
+        CONFIG_RFKILL=y \
+        CONFIG_RFKILL_PM=y \
+        CONFIG_RFKILL_GPIO=y
+
+  AUTOLOAD:=$(call AutoProbe,8723ds)
+endef
+
+define KernelPackage/net-rtl8723ds/description
+ Kernel modules for RealTek RTL8723DS support
+endef
+
+$(eval $(call KernelPackage,net-rtl8723ds))
+
 define KernelPackage/net-rtl8821cs
   SUBMENU:=$(WIRELESS_MENU)
   TITLE:=RTL8821CS support (staging)
