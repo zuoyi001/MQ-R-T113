@@ -81,3 +81,10 @@ GTAGS
 /device/config/chips/f133/bin/u-boot_sun20iw1p1.bin
 
 
+/scripts/config/conf
+/scripts/config/mconf
+/scripts/config/mconf_check
+/scripts/config/zconf
+/scripts/config/zconf.tab.c
+/scripts/config/zconf.lex.c
+/scripts/config/zconf.hash.c
