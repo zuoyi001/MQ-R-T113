@@ -65,3 +65,18 @@ GTAGS
 .config
 .config.old
 
+# bin
+device/config/chips/t113/bin/boot0_nand_sun8iw20p1.bin
+device/config/chips/t113/bin/boot0_sdcard_sun8iw20p1.bin
+device/config/chips/t113/bin/boot0_spinor_sun8iw20p1.bin
+device/config/chips/t113/bin/fes1_sun8iw20p1.bin
+device/config/chips/t113/bin/sboot_sun8iw20p1.bin
+device/config/chips/t113/bin/u-boot-sun8iw20p1.bin
+
+device/config/chips/f133/bin/boot0_nand_sun20iw1p1.bin
+device/config/chips/f133/bin/boot0_sdcard_sun20iw1p1.bin
+device/config/chips/f133/bin/boot0_spinor_sun20iw1p1.bin
+device/config/chips/f133/bin/fes1_sun20iw1p1.bin
+device/config/chips/f133/bin/sboot_sun20iw1p1.bin
+
+
