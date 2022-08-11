@@ -78,5 +78,6 @@ GTAGS
 /device/config/chips/f133/bin/boot0_spinor_sun20iw1p1.bin
 /device/config/chips/f133/bin/fes1_sun20iw1p1.bin
 /device/config/chips/f133/bin/sboot_sun20iw1p1.bin
+/device/config/chips/f133/bin/u-boot_sun20iw1p1.bin
 
 
