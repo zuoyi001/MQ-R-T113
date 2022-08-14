@@ -29,13 +29,28 @@ Tina-Linux for T113/D1-H/D1s
   You're building on Linux
 
 Lunch menu... pick a combo:
-     1. f133_evb1-tina
-     2. f133_pro-tina
-     3. t113_evb1-tina
-``` 
-  $ 1 or 3
+     1. d1_mq_pro-tina
+     2. d1_nezha_min-tina
+     3. d1_nezha-tina
+     4. f133_evb1-tina
+     5. f133_mq_r-tina
+     6. t113_evb1-tina
+     7. t113_mq_r-tina
+
+
+  $ 1 or 5 or 7
   
-  $ muboot
   $ make
+  $ mboot
   $ pack
+  
+  Tina-Linux/out/d1-mq_pro/tina_d1-mq_pro_uart0.img
+  
+  ``` 
+  
+### Flash to TF-Card
+
+just used [phoenixcar](https://mangopi.cc/_media/phoenixcard4.2.8.zip) 
+
+more info : https://mangopi.cc/d1 
   
