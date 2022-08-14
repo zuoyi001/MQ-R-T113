@@ -14,11 +14,11 @@ machine = "evb1"
 
 
 ;----------------------------------------------------------------------------------
-;debug_mode     = 0-close printf, > 0-open printf
+;debug_mode     = 0-close printf, > 1-open printf
 ;----------------------------------------------------------------------------------
 [platform]
 eraseflag   = 1
-debug_mode  = 0
+debug_mode  = 1
 ;----------------------------------------------------------------------------------
 ;   system configuration
 ;   ?
@@ -33,7 +33,7 @@ debug_mode  = 0
 ;storage_type   = boot medium, 0-nand, 1-sd, 2-emmc, 3-nor, 4-emmc3, 5-spinand -1(defualt)auto scan
 ;----------------------------------------------------------------------------------
 [target]
-storage_type    = 5
+storage_type    = 1
 burn_key        = 0
 ;----------------------------------------------------------------------------------
 ;spinor configuration
@@ -130,7 +130,7 @@ sdc_dis_host_caps = 0x180
 ;jtag_di	|测试数据输出(TDI) 的GPIO配置     |
 ;----------------------------------------------------------------------------------
 [jtag_para]
-jtag_enable     = 1
+jtag_enable     = 0
 jtag_ms         = port:PH9<3><default><default><default>
 jtag_ck         = port:PH10<3><default><default><default>
 jtag_do         = port:PH11<3><default><default><default>
@@ -209,9 +209,12 @@ twi_sda  = port:PC1<3><1><default><default>
 ;----------------------------------------------------------------------------------
 [uart_para]
 uart_debug_port = 0
-uart_debug_tx   = port:PF02<3><1><default><default>
-uart_debug_rx   = port:PF04<3><1><default><default>
+uart_debug_tx   = port:PE02<6><1><default><default>
+uart_debug_rx   = port:PE03<6><1><default><default>
 
+;uart_debug_port = 3
+;uart_debug_tx   = port:PB06<7><1><default><default>
+;uart_debug_rx   = port:PB07<7><1><default><default>
 
 ;----------------------------------------------------------------------------------
 ;dram_region_mbytes :设置drm大小以bytes为单位
