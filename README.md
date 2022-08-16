@@ -1,6 +1,10 @@
+<p align="center">
+<a href=https://twitter.com/mangopi_sbc><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/mangopi_sbc?logo=twitter&style=flat-square"></a>
+
+</p>
+
 # Tina-Linux
 Tina-Linux for T113/D1-H/D1s
-
 
 
 ### Ubuntu environment 
