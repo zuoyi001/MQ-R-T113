@@ -59,7 +59,7 @@ size = 16384
 
 [partition]
     name         = rootfs
-    size         = 53760
+    size         = 61440
     downloadfile = "rootfs.fex"
     user_type    = 0x8000
 
@@ -70,13 +70,15 @@ size = 16384
 ;    user_type    = 0x8000
 
 [partition]
-    name         = recovery
-    size         = 19840
+    name         = private
+    size         = 10240
     user_type    = 0x8000
 
 [partition]
     name         = rootfs_data
-    size         = 10240
+    size         = 50400
     user_type    = 0x8000
 
-
+[partition]
+    name         = UDISK
+    user_type    = 0x8100

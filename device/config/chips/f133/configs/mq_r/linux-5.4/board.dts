@@ -529,7 +529,7 @@
 			clock-names = "32k-fanout1";
 			clocks = <&ccu CLK_FANOUT1_OUT>;
 			wlan_busnum    = <0x1>;
-			wlan_regon    = <&pio PE 3 GPIO_ACTIVE_HIGH>;
+			wlan_regon    = <&pio PG 12 GPIO_ACTIVE_HIGH>;
 			wlan_hostwake  = <&pio PG 10 GPIO_ACTIVE_HIGH>;
 			/*wlan_power    = "VCC-3V3";*/
 			/*wlan_power_vol = <3300000>;*/
@@ -615,7 +615,7 @@
 	/*vdmmc33sw-supply = <&reg_dcdc1>;*/
 	/*vqmmc18sw-supply = <&reg_eldo1>;*/
 	/*vdmmc18sw-supply = <&reg_eldo1>;*/
-	status = "disabled";
+	status = "okay";
 };
 
 &sdc1 {

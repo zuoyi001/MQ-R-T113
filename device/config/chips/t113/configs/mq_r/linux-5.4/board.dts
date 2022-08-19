@@ -535,7 +535,7 @@
 			/*bt_io_regulator = "axp803-dldo1";*/
 			/*bt_io_vol = <3300000>;*/
 			/*bt_power_vol = <330000>;*/
-			bt_rst_n      = <&pio PG 15 GPIO_ACTIVE_LOW>;
+			bt_rst_n      = <&pio PG 18 GPIO_ACTIVE_LOW>;
 			status        = "disabled";
 		};
 	};

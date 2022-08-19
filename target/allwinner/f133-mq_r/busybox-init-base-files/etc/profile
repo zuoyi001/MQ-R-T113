@@ -21,7 +21,6 @@ export TSLIB_FBDEVICE=/dev/fb0
 export TSLIB_TSDEVICE=/dev/input/event3
 
 ulimit -c unlimited
-ulimit -s 512
 grep debugfs /proc/filesystems && mount -t debugfs none /sys/kernel/debug
 alias usbhost="cat /sys/devices/platform/soc@3000000/soc@3000000:usbc0@0/usb_host"
 alias usbdevice="cat /sys/devices/platform/soc@3000000/soc@3000000:usbc0@0/usb_device"

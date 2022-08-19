@@ -54,7 +54,7 @@ size = 16384
 
 [partition]
     name         = boot
-    size         = 8064
+    size         = 12800
     downloadfile = "boot.fex"
     user_type    = 0x8000
 

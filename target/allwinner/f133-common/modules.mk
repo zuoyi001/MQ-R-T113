@@ -231,6 +231,24 @@ endef
 
 $(eval $(call KernelPackage,net-rtl8723ds))
 
+define KernelPackage/net-rtl8189fs
+  SUBMENU:=$(WIRELESS_MENU)
+  TITLE:=RTL8189FS support (staging)
+  DEPENDS:= +kmod-sunxi-rf-wlan +kmod-cfg80211
+  KCONFIG:=\
+    CONFIG_RFKILL=y \
+        CONFIG_RFKILL_PM=y \
+    CONFIG_RFKILL_GPIO=y
+  FILES:=$(LINUX_DIR)/drivers/net/wireless/rtl8189fs/8189fs.ko
+  AUTOLOAD:=$(call AutoProbe, 8189fs.ko)
+endef
+
+define KernelPackage/net-rtl8189fs/description
+ Kernel modules for RealTek RTL8189FS support
+endef
+
+$(eval $(call KernelPackage,net-rtl8189fs))
+
 define KernelPackage/net-rtl8821cs
   SUBMENU:=$(WIRELESS_MENU)
   TITLE:=RTL8821CS support (staging)
