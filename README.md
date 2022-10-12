@@ -4,10 +4,10 @@
 </p>
 
 # Tina-Linux
-Tina-Linux for T113/D1-H/D1s
+Tina-Linux for F133/T113/D1-H
 
 
-### Ubuntu environment 
+### Ubuntu18.04 environment 
   $ sudo apt-get install build-essential subversion git-core libncurses5-dev zlib1g-dev gawk flex quilt libssl-dev xsltproc libxml-parser-perl mercurial bzr ecj cvs unzip lib32z1 lib32z1-dev lib32stdc++6 libstdc++6 libmpc-dev libgmp-dev -y
 
 ### SDK download from GitHub
@@ -56,5 +56,5 @@ Lunch menu... pick a combo:
 
 just used [phoenixcar](https://mangopi.cc/_media/phoenixcard4.2.8.zip) 
 
-more info : https://mangopi.cc/d1 
+more info : https://mangopi.org
   
