@@ -3,6 +3,10 @@
 
 </p>
 
+# 工具下载地址；
+
+https://home.evler.cn:3443/fsdownload/CWUmBnOil/tina-sdk-static-file
+
 # Tina-Linux
 Tina-Linux for F133/T113/D1-H
 
